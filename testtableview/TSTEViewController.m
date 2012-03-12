@@ -73,7 +73,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellId"];
     cell.textLabel.text = [_list objectAtIndex:indexPath.row];
-    cell.backgroundColor = [UIColor grayColor];
+    cell.selectionStyle = UITableViewCellSelectionStyleGray;
    
     return cell;
 }
